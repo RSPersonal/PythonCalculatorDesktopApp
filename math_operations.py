@@ -53,3 +53,17 @@ class MathOperations():
             return np.subtract(value_one, value_two)
         else:
             return ERROR_MSG
+    
+    def multiply(self, value_one, value_two):
+        """
+        Args:
+            value_one ([type]): [description]
+            value_two ([type]): [description]
+
+        Returns:
+            : [description]
+        """
+        if self.check_for_correct_input(self, value_one, value_two) == True:
+            return np.multiply(value_one, value_two)
+        else:
+            return ERROR_MSG
